@@ -1,0 +1,89 @@
+.protag-contents { display: vertical-align: top;font-family: tahoma; width: 300px; font-size: 9px; line-height: 10px;text-align: justify; padding: 5px; border-top: 1px #a4a4a4 solid; border-bottom: 1px #a4a4a4 solid; color: #444444;}
+.protag-contents-links a { text-transform: uppercase; font-size: 7px; }
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+
+.css-slideshow{
+  vertical-align: top;
+  width: 244px;
+  background: #f1f1f1;
+ padding: 10px;
+}
+.css-slideshow figure{
+  margin: 0;
+  position: absolute;
+}
+figure:nth-child(1) {
+  animation: xfade 18s 15s infinite;
+}
+figure:nth-child(2) {
+  animation: xfade 18s 12s infinite;
+}
+figure:nth-child(3) {
+  animation: xfade 18s 9s infinite;
+}
+figure:nth-child(4) {
+  animation: xfade 18s 6s infinite;
+}
+figure:nth-child(5) {
+  animation: xfade 18s 3s infinite;
+}
+figure:nth-child(6) {
+  animation: xfade 18s 0s infinite;
+}
+
+@keyframes xfade{
+  0%{
+    opacity: 1;
+  }
+  8% {
+    opacity: 1;
+  }
+  17%{
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
